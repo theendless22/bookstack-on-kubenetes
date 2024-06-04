@@ -3,9 +3,9 @@ services:
   bookstack:
     image: linuxserver/bookstack:latest
     container_name: my-bookstack
-    restart: always   #if the container fails, policy is to do a restart automatically always 
+    restart: always   #if the container fails, policy is to do a restart automatically always
     ports:
-      - "8080:80" # TO DO: change these to more secure ports
+      - "8080:80" #TO DO: change these to more secure ports
     volumes:
       - /Users/shruthinaidu/gitrepos/bookstack-on-kubenetes/data:/config
     environment:
